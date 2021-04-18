@@ -1,0 +1,7 @@
+# If you have set authentication to mosquitto, make sure you add then -u $USERNAME and -p $PASSWORD parameter to mosquitto_sub
+version: '2.4'
+services:
+  eclipse-mosquitto:
+    image: eclipse-mosquitto
+    healthcheck:
+      test: mosquitto_sub -i moquitto-health -t '$SYS/#' -C 1
