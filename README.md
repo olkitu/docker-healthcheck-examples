@@ -4,7 +4,7 @@ Docker Compose healthcheck examples for different services.
 
 ## Example use on local development
 
-On local development it's recommend use Docker Compose version 2.1 or newer, because it allow use [condition feature](https://docs.docker.com/compose/compose-file/compose-file-v2/#depends_on). This make sure the web container doesn't start before example mysql container is healthy:
+On local development it's recommend use Docker Compose version 2.4, because it allow use [condition feature](https://docs.docker.com/compose/compose-file/compose-file-v2/#depends_on) (This is not available on 3.X-version). This make sure the web container doesn't start before example mysql container is healthy:
 
 ```yml
 version: '2.4'
