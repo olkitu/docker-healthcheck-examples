@@ -16,4 +16,6 @@ services:
         condition: service_healthy
   mysql:
     image: mysql
+    healthcheck:
+      test: mysqladmin ping -h 127.0.0.1
 ```
