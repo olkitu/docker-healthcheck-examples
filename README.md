@@ -10,7 +10,7 @@ On local development it's recommend use Docker Compose version 2.1 or newer, bec
 version: '2.4'
 services:
   web:
-    image: apache
+    image: nginx
     depends_on:
       mysql:
         condition: service_healthy
