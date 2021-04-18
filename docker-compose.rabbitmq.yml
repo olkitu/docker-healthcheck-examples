@@ -1,0 +1,6 @@
+version: '2.4'
+services:
+  rabbitmq:
+    image: rabbitmq
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping

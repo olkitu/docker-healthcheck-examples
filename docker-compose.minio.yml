@@ -1,0 +1,10 @@
+version: '2.4'
+services:
+  minio:
+    image: minio/minio
+    command: 'server /data'
+    environment: 
+      MINIO_ACCESS_KEY: testkey1234
+      MINIO_SECRET_KEY: testkey1234
+    healthcheck:
+      test: curl -f http://localhost:9000/minio/health/live
