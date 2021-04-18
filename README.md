@@ -1,6 +1,6 @@
-# docker-compose healthcheck examples
+# Docker Compose healthcheck examples
 
-Docker-compose healthcheck examples for different services.
+Docker Compose healthcheck examples for different services.
 
 ## Example use on local development
 
